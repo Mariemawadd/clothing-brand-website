@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wishlist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+</head>
+<body>
+    <header>
+        <div class="fixed">
+                <div class="search">
+                    <span class="search-icon material-symbols-outlined">search</span>
+                    <input class="search-input" type="search" placeholder="Search">
+                </div>
+    
+     <div class="logo"><a href="home.html">D A S H I N'</a></div>
+     <nav class="Navigation">
+        <a href="home.html">Home</a> 
+        <a href="bestseller.html">Shop</a>  
+        <a href="blog.html">Blog</a> 
+        <a href="About.html">About Us</a>
+        </nav>
+        </div>
+    
+        <div class="icons">
+            <a href="account.html" title="Profile"><i class="fa-regular fa-user"></i></a>   <!-- Login Icon -->
+            <a href="wishlist.html" title="Wishlist"><i class="fa-regular fa-heart"></i></a>  <!-- Favorites Icon -->
+            <a href="cart.html" title="Cart"><i class="fa-solid fa-bag-shopping"></i></a> <!-- Shopping Cart Icon -->
+        </div>
+        </header>
+
+   <div class="wishlist-container">
+    <p class="wishlist-title"><i class="fa-regular fa-heart"> </i> My Wishlist </p><!--whishlist heart icon-->
+    
+    <div class="wishlist-header">
+        <div class="wishlist-titles">
+            <p class="productname"> Product Name</p>
+            <p class="theprice"> Price</p>
+            <p class="stockstatus">Stock Status</p>
+            <p class="actions">Actions</p>
+        </div>
+    </div>
+
+    <!-- Wishlist Item -->
+    <div class="wishlist-item"><!--first item-->
+        <p class="remove-item"><i class="fa-solid fa-trash-can" ></i></p>
+        <div class="product-image">
+            <img src="WebPhotos/redjumpsuit.jpg" alt="Dashin'Fire">
+        </div>
+        <p class="product-name">Dashin'Fire</p>
+        <p class="pricewish"><span class="old-price">LE 1500</span> LE 750</p>
+        <p class="in-stock">In Stock</p>
+        <button class="add-to-cart3" onclick="alert('Item added to cart!')"><b>ADD TO CART</b></button>
+
+    </div>
+
+    <div class="wishlist-item"><!--second item-->
+        <p class="remove-item"><i class="fa-solid fa-trash-can" ></i></p>
+        <div class="product-image">
+            <img src="WebPhotos/colorfulsweatpant.jpg" alt="Dashin'Chill">
+        </div>
+        <p class="product-name">Dashin'Chill</p>
+        <p class="pricewish">LE 600</p>
+        <p class="in-stock"> &nbsp; &nbsp;In Stock</p>
+        <button class="add-to-cart3" onclick="alert('Item added to cart!')"><b>ADD TO CART</b></button>
+    </div>
+
+    <div class="wishlist-item"><!-- third item-->
+        <p class="remove-item"><i class="fa-solid fa-trash-can" ></i></p>
+        <div class="product-image">
+            <img src="WebPhotos/whiteandpink.jpg" alt="Dashin'Angle">
+        </div>
+        <p class="product-name">Dashin'Angle</p>
+        <p class="pricewish">LE 800</p>
+        <p class="out-stock">Out of Stock</p>
+        <button class="add-to-cart2">ADD TO CART</button>
+    </div>
+
+    <div class="wishlist-item"><!--fourth item-->
+        <p class="remove-item"><i class="fa-solid fa-trash-can" ></i></p>
+        <div class="product-image">
+            <img src="WebPhotos/orangehoodie.jpg" alt="Dashin'Special">
+        </div>
+        <p class="product-name">Dashin'Special</p>
+        <p class="pricewish">LE 800</p>
+        <p class="out-stock">Out of Stock</p>
+        <button class="add-to-cart2">ADD TO CART</button>
+    </div>
+</div>
+    <footer>
+        <div class="column">
+            <h3>All You Need</h3>
+            <div class="menu">
+                <a href="home.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Policies &amp; Guidelines</h3>
+            <div class="menu">
+                <a href="shipping.html">Shipping &amp; Delivery</a>
+                <a href="returns.html">Returns &amp; Refunds</a>
+                <a href="policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms &amp; Conditions</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Collections</h3>
+            <div class="menu">
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Connect</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        <div class="payment">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+        </div>
+        <div class="newsletter">
+            <p>Sign up to stay updated with the latest sales</p>
+            <div class="newsletter-box">
+                <form method="get">
+                    <input type="email" placeholder="Email address">
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <small><i>Copyright &copy; 2025 Dashin'</i></small>
+        </div>
+    </footer>
+</body>
+</html>

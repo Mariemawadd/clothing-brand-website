@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<script src="script.js"></script>
+
+<header>
+  <div class="fixed">
+    <div class="search">
+      <span class="search-icon material-symbols-outlined">search</span>
+      <input class="search-input" type="search" placeholder="Search">
+    </div>
+    <div class="logo"><a href="home.html">D A S H I N'</a></div>
+    <nav class="Navigation">
+      <a href="home.html">Home</a>
+      <a href="bestseller.html">Shop</a>
+      <a href="blog.html">Blog</a>
+      <a href="About.html">About Us</a>
+    </nav>
+  </div>
+  <div class="icons">
+    <a href="account.html" title="Profile"><i class="fa-regular fa-user"></i></a>
+    <a href="wishlist.html" title="Wishlist"><i class="fa-regular fa-heart"></i></a>
+    <a href="cart.html" title="Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+  </div>
+</header>
+
+<div class="pcontainer">
+  <div class="productImage"><img src="WebPhotos/women1.jpeg" alt="Dashin' Frost" width="600" height="700"></div>
+  <div class="product-details">
+    <h2 class="product-names">Dashin' Fire</h2>
+    <div class="rating">
+      <span id="gold-stars">★★★★</span><span id="grey-star">★</span><b>400</b> 
+      <a href="#rev" class="reviews"><b>Reviews</b></a>
+    </div>
+
+    <div class="pprice">
+      <span class="old-price">LE 1500</span>
+      <span class="new-price">LE 750</span>
+      <p>sale</p>
+    </div>
+
+    <p class="section-title">Colors</p>
+    <div class="color-options1">
+      <span class="color-box1"></span><span class="color-box2"></span><span class="color-box3"></span><span class="color-box4"></span>
+    </div>
+
+    <div class="size-section">
+      <p class="section-title">Sizes <a href="#" class="size-guide" onclick="openSizeChart()">Size Guide</a></p>
+
+      <div id="sizeChartModal" class="size-chart-modal">
+        <div class="size-chart-content">
+          <span class="close-btn" onclick="closeSizeChart()">&times;</span>
+          <h2 style="text-align:center;margin-bottom:15px;">Size Chart</h2>
+
+          <table class="size-chart-table">
+            <thead><tr><th>Size</th><th>Chest (cm)</th><th>Waist (cm)</th><th>Hip (cm)</th><th>Sleeve (cm)</th></tr></thead>
+            <tbody>
+              <tr><td><strong>XS</strong></td><td>34-36</td><td>28-30</td><td>34-36</td><td>32.5</td></tr>
+              <tr><td><strong>S</strong></td><td>36-38</td><td>30-32</td><td>36-38</td><td>33</td></tr>
+              <tr><td><strong>M</strong></td><td>38-40</td><td>32-34</td><td>38-40</td><td>33.5</td></tr>
+              <tr><td><strong>L</strong></td><td>40-42</td><td>34-36</td><td>40-42</td><td>34</td></tr>
+              <tr><td><strong>XL</strong></td><td>42-44</td><td>36-38</td><td>42-44</td><td>34.5</td></tr>
+            </tbody>
+          </table>
+
+          <div class="measure-guide">
+            <h3>How to Measure</h3>
+            <ul>
+              <li><strong>Chest:</strong> Measure under your arms, around the fullest part of your chest.</li>
+              <li><strong>Waist:</strong> Measure around your natural waistline.</li>
+              <li><strong>Hip:</strong> Measure around the fullest part of your hips.</li>
+              <li><strong>Sleeve:</strong> Measure from the center back of your neck, across shoulder and down to wrist.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="size-options">
+        <label><input type="radio" name="size" class="size-input"><span class="size-box">XS</span></label>
+        <label><input type="radio" name="size" class="size-input"><span class="size-box">S</span></label>
+        <label><input type="radio" name="size" class="size-input"><span class="size-box">M</span></label>
+        <label><input type="radio" name="size" class="size-input"><span class="size-box">L</span></label>
+        <label><input type="radio" name="size" class="size-input"><span class="size-box">XL</span></label>
+      </div>
+    </div>
+
+    <div class="quantity-container">
+      <p class="qty-title">Quantity</p>
+      <div class="quantity-section">
+        <button class="qty-btn" onclick="changeQty(-1)">-</button>
+        <input type="text" value="1" class="qty-input" id="qtyInput" readonly>
+        <button class="qty-btn" onclick="changeQty(1)">+</button>
+      </div>
+    </div>
+
+    <div class="add-to-cart-container">
+      <button class="add-to-cart" onclick="alert('Item added to cart!')"><b>ADD TO CART</b></button>
+      <label><input type="checkbox" name="wishlist" class="wishlist-input"><span class="wishlist-btn"><i class="wishlist-btn fa-regular fa-heart"></i></span></label>
+    </div>
+  </div>
+</div>
+
+<div class="info-section">
+  <h3 class="toggle-header" onclick="toggleSection('care-instructions')"><i class="fa-regular fa-heart"></i> CARE INSTRUCTIONS</h3>
+  <div id="care-instructions" class="toggle-content">
+    <table class="custom-table">
+      <thead><tr><th>Fabric Type</th><th>Washing</th><th>Drying</th><th>Ironing</th><th>Special Notes</th></tr></thead>
+      <tbody>
+        <tr><td>100% Cotton</td><td>Machine wash cold</td><td>Tumble dry low</td><td>Medium heat</td><td>May shrink slightly</td></tr>
+        <tr><td>Linen</td><td>Hand wash or dry clean</td><td>Line dry</td><td>Steam only</td><td>Wrinkles are natural</td></tr>
+        <tr><td>Wool</td><td>Dry clean recommended</td><td>Lay flat to dry</td><td>Low heat with cloth</td><td>May felt if agitated</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="reviewsB">
+  <div class="inner">
+    <h1 id="rev">Reviews</h1>
+    <div class="border"></div>
+    <div class="row">
+
+      <div class="clom">
+        <div class="review">
+          <img src="WebPhotos/review2.jpg" alt=""><div class="nameB">Aliaa Ahmed</div>
+          <div class="stras"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+          <p>Absolutely love this product! The quality is top-notch, and it exceeded my expectations. Definitely worth every penny!</p>
+        </div>
+      </div>
+
+      <div class="clom">
+        <div class="review">
+          <img src="WebPhotos/Awad'Review.jpeg" alt=""><div class="nameB">Mariem Awad</div>
+          <div class="stras"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+          <p>This jumpsuit is absolutely perfect! Well made and durable, it fits beautifully and looks amazing. Definitely 5 star!</p>
+        </div>
+      </div>
+
+      <div class="clom">
+        <div class="review">
+          <img src="WebPhotos/review1.jpg" alt=""><div class="nameB">Marina Gerges</div>
+          <div class="stras"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+          <p>A must-have! This product is stylish and functional. It’s become a staple in my daily routine. Highly recommend!</p>
+        </div>
+      </div>
+
+      <div class="clom">
+        <div class="review">
+          <img src="WebPhotos/hazem'review.jpeg" alt=""><div class="nameB">Hazem Shehta</div>
+          <div class="stras"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+          <p>Love this item! The design is so creative and unique. Great quality. My only issue is the shipping speed.</p>
+        </div>
+      </div>
+
+      <div class="clom">
+        <div class="review">
+          <img src="WebPhotos/ali'review.jpeg" alt=""><div class="nameB">Ali Amr</div>
+          <div class="stras"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+          <p>Dashin' changed my view on everyday fashion. Insanely comfortable but stylish too!</p>
+        </div>
+      </div>
+
+      <div class="clom">
+        <div class="review">
+          <img src="WebPhotos/moaaz'review.jpeg" alt=""><div class="nameB">Moaaz Hady</div>
+          <div class="stras"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>Since I discovered Dashin', I've loved everything they offer. Unique details and high-quality pieces!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="column">
+        <h3>All You Need</h3>
+        <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </div>
+    </div>
+    <div class="column">
+        <h3>Policies &amp; Guidelines</h3>
+        <div class="menu">
+        <a href="shipping.html">Shipping &amp; Delivery</a>
+        <a href="returns.html">Returns &amp; Refunds</a>
+        <a href="policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+    </div>
+    <div class="column">
+        <h3>Collections</h3>
+        <div class="menu">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+    </div>
+    </div>
+    <div class="column">
+        <h3>Connect</h3>
+        <div class="social-icons">
+         <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+         <a href="https://www.facebook.com." target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+         <a href="https://www.tiktok.com" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        </div>
+    </div>
+    <div class="payment">
+    <i class="fa-brands fa-cc-visa"></i>
+    <i class="fa-brands fa-cc-mastercard"></i>
+    <i class="fa-brands fa-cc-apple-pay"></i>
+    <i class="fa-brands fa-cc-paypal"></i>
+    </div>
+    <div class="newsletter">
+        <p>Sign up to stay updated with the latest sales</p>
+        <div class="newsletter-box">
+            <form method="get">
+            <input type="email" placeholder="Email address">
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </form>
+        </div> 
+    </div>
+    <div class="copyright">
+        <i>
+      <small>
+      Copyright &copy; 2025 Dashin'
+      </small>
+       </i>
+       </div>
+
+</footer>
+
+</body>
+</html>

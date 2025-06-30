@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <script src="script.js"></script>
+<header>
+    <div class="fixed">
+            <div class="search">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input class="search-input" type="search" placeholder="Search">
+            </div>
+
+        <div class="logo"><a href="home.html">D A S H I N'</a></div>
+   
+    <nav class="Navigation">
+    <a href="home.html">Home</a> 
+    <a href="bestseller.html">Shop</a>  
+    <a href="blog.html">Blog</a> 
+    <a href="About.html">About Us</a>
+    </nav>
+
+ </div>
+
+    <div class="icons">
+        <a href="account.html" title="Profile"><i class="fa-regular fa-user"></i></a>   <!-- Login Icon -->
+        <a href="wishlist.html" title="Wishlist"><i class="fa-regular fa-heart"></i></a>  <!-- Favorites Icon -->
+        <a href="cart.html" title="Cart"><i class="fa-solid fa-bag-shopping"></i></a> <!-- Shopping Cart Icon -->
+    </div>
+    </header>
+    <div class="contact-container">  
+      <div>
+        <h2>Contact Us</h2>
+        <p>Fill out the form below to get in touch with us!</p>
+  
+        <form action="#" method="POST">
+          <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+          </div>
+  
+          <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+          </div>
+  
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+  
+          <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <label for="attachment">Attach a file (Optional)</label>
+            <input type="file" id="attachment" name="attachment">
+        </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Enter your message here..."></textarea>
+          </div>
+          
+          <button class="submit-btn" type="submit" onclick="handleSubmit(event)">Submit</button>
+        </form>
+  
+        <div class="contact-info">
+          <h3>No response?</h3>
+          <p>Still have more questions? Reach us by calling, emailing, or following us on social media!</p>
+          <p><i class="fa-solid fa-phone"></i> +20 10 123 456 78</p> 
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:dashinEG@gmail.com">dashinEG@gmail.com</a></p>
+        </div>
+  </div>
+</div>
+
+<footer>
+    <div class="column">
+        <h3>All You Need</h3>
+        <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </div>
+    </div>
+    <div class="column">
+        <h3>Policies &amp; Guidelines</h3>
+        <div class="menu">
+        <a href="shipping.html">Shipping &amp; Delivery</a>
+        <a href="returns.html">Returns &amp; Refunds</a>
+        <a href="policy.html">Privacy Policy</a>
+        <a href="terms.html">Term &amp; Conditions</a>
+        </div>
+    </div>
+    <div class="column">
+        <h3>Collections</h3>
+        <div class="menu">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+    </div>
+    </div>
+    <div class="column">
+        <h3>Connect</h3>
+        <div class="social-icons">
+         <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+         <a href="https://www.facebook.com." target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+         <a href="https://www.tiktok.com" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        </div>
+    </div>
+    <div class="payment">
+    <i class="fa-brands fa-cc-visa"></i>
+    <i class="fa-brands fa-cc-mastercard"></i>
+    <i class="fa-brands fa-cc-apple-pay"></i>
+    <i class="fa-brands fa-cc-paypal"></i>
+    </div>
+    <div class="newsletter">
+        <p>Sign up to stay updated with the latest sales</p>
+        <div class="newsletter-box">
+            <form method="get">
+            <input type="email" placeholder="Email address">
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </form>
+        </div> 
+    </div>
+    <div class="copyright">
+        <i>
+      <small>
+      Copyright &copy; 2025 Dashin'
+      </small>
+       </i>
+       </div>
+
+</footer>
+
+</body>
+</html>
